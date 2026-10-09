@@ -7,11 +7,12 @@ import Heritage from "@/components/Heritage";
 import Footer from "@/components/home/Footer";
 import { CloseBand } from "@/components/home/HomeBands";
 import Testimonials from "@/components/home/Testimonials";
+import "./home-royal.css";
 
 export default function HomePage() {
   return (
-    <>
-      <Header />
+    <div className="home-royal-page">
+      <Header variant="home" />
       <main id="top">
         <Hero />
         <BetweenHero />
@@ -22,6 +23,6 @@ export default function HomePage() {
         <Testimonials />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

@@ -1,22 +1,25 @@
 :root {
   --obsidian: #0a0806;
-  --charcoal: #17130f;
-  --ivory: #f4eee3;
-  --warm: #f7f2e9;
-  --gold: #b79a68;
-  --champagne: #d4bc8a;
-  --gold-soft: rgba(183, 154, 104, 0.38);
+  --charcoal: #29251f;
+  --ivory: #f5eee4;
+  --cream: #e7d7c2;
+  --warm: #f5eee4;
+  --gold: #ad8548;
+  --champagne: #c4a46a;
+  --gold-soft: rgba(173, 133, 72, 0.38);
+  --olive: #596647;
+  --heritage-brown: #33271e;
   --burgundy: #651c24;
 
-  --text: #17130f;
-  --text-soft: rgba(23, 19, 15, 0.62);
+  --text: #33271e;
+  --text-soft: rgba(51, 39, 30, 0.68);
 
   --font-display: var(--font-display-face), "Times New Roman", serif;
   --font-body: var(--font-sans-face), "Helvetica Neue", sans-serif;
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --dur: 900ms;
-  --nav-h: 112px;
+  --nav-h: 80px;
   --gutter: clamp(1.25rem, 4vw, 4.5rem);
   --max: 1440px;
 }

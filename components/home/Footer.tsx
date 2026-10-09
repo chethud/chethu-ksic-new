@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-ed__top">
         <div className="footer-ed__brand">
           <Emblem />
-          <p>Woven for Generations</p>
+          <p>Woven for Generations · Since 1912</p>
         </div>
         <div className="footer-ed__cols">
           <div>
@@ -27,21 +27,22 @@ export default function Footer() {
             <p>House</p>
             <Link href="/story">Our story</Link>
             <Link href="/heritage">Heritage</Link>
-            <Link href="/journal">Journal</Link>
-            <Link href="/account">Silk Vault</Link>
+            <Link href="/mysore-silk/craft">Craft</Link>
+            <Link href="/visit/showrooms">Stores</Link>
           </div>
           <div>
             <p>Account</p>
             <Link href="/wishlist">Wishlist</Link>
             <Link href="/bag">Bag</Link>
             <Link href="/orders">My orders</Link>
-            <Link href="/account?tab=creations">Saved creations</Link>
+            <Link href="/account">Silk Vault</Link>
           </div>
         </div>
       </div>
       <div className="footer-ed__bottom">
         <span>© Mysore Silk</span>
         <span>KSIC</span>
+        <span>English · ಕನ್ನಡ</span>
       </div>
     </footer>
   );

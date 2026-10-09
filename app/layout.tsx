@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Outfit } from "next/font/google";
+import { Cormorant_Garamond, Manrope } from "next/font/google";
 import AuthDialog from "@/components/auth/AuthDialog";
 import "./globals.css";
 import "./ux.css";
@@ -12,15 +12,15 @@ const display = Cormorant_Garamond({
   display: "swap",
 });
 
-const sans = Outfit({
+const sans = Manrope({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["300", "400", "500", "600"],
   variable: "--font-sans-face",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Mysore Silk — Woven for Generations",
+  title: "KSIC Mysore Silk — Royal Heritage",
   description:
     "Mysore Silk — a luxury house of pure silk, gold zari, and generational craftsmanship from Mysuru.",
 };
