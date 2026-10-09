@@ -12,7 +12,6 @@ const copy = {
     titleB: "Silk",
     lead: ["Pure silk.", "Woven in Mysuru.", "For generations."],
     cta: "Explore Collection",
-    scroll: ["Scroll", "to explore"],
   },
   kn: {
     eyebrow: "ರಾಜಮನೆತನದ ಪರಂಪರೆ · ೧೯೧೨ರಿಂದ",
@@ -20,7 +19,6 @@ const copy = {
     titleB: "ಸಿಲ್ಕ್",
     lead: ["ಶುದ್ಧ ರೇಷ್ಮೆ.", "ಮೈಸೂರಿನಲ್ಲಿ ನೇಯ್ದಿದ್ದು.", "ತಲೆಮಾರುಗಳಿಗಾಗಿ."],
     cta: "ಸಂಗ್ರಹವನ್ನು ನೋಡಿ",
-    scroll: ["ಸ್ಕ್ರಾಲ್", "ಅನ್ವೇಷಿಸಿ"],
   },
 } as const;
 
@@ -66,11 +64,6 @@ export default function Hero() {
     };
   }, []);
 
-  const scrollNext = () => {
-    const next = document.getElementById("between");
-    next?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section
       className={`hero hero-royal${ready ? " is-ready" : ""}`}
@@ -79,20 +72,9 @@ export default function Hero() {
     >
       <div className="hero-royal__stage" ref={stageRef}>
         <picture className="hero-royal__picture">
-          <source
-            media="(max-width: 640px)"
-            srcSet="/hero-royal-sm.webp"
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 1100px)"
-            srcSet="/hero-royal-md.webp"
-            type="image/webp"
-          />
-          <source srcSet="/hero-royal.webp" type="image/webp" />
           <img
-            src="/hero-royal.jpg"
-            alt=""
+            src="/hero-royal.jpg?v=saree-only"
+            alt="Draped peacock teal Mysore silk saree with gold zari border"
             className="hero-royal__image"
             width={1672}
             height={941}
@@ -124,15 +106,6 @@ export default function Hero() {
           {t.cta} <span aria-hidden="true">→</span>
         </Link>
       </div>
-
-      <button type="button" className="hero-royal__scroll" onClick={scrollNext}>
-        <span>
-          {t.scroll[0]}
-          <br />
-          {t.scroll[1]}
-        </span>
-        <span className="hero-royal__scroll-line" aria-hidden="true" />
-      </button>
     </section>
   );
 }

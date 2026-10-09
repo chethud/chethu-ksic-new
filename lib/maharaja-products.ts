@@ -35,8 +35,8 @@ export const MAHARAJA_PRODUCTS: MaharajaProduct[] = [
     tagline: "Deep sapphire silk with temple gold zari.",
     description:
       "A regal Mysore silk in royal blue, woven with pure gold zari that catches light along the border and pallu. Commissioned in the spirit of palace attire — luminous, weighty in presence, and made to be inherited.",
-    image: "/maharaja/royal-blue.jpg?v=1",
-    hover: "/maharaja/royal-blue-hover.jpg?v=1",
+    image: "/maharaja/royal-blue.jpg?v=2",
+    hover: "/maharaja/royal-blue.jpg?v=2",
     colorName: "Royal Blue & Gold",
     hexColor: "#1a3a6b",
     details: {
@@ -61,8 +61,8 @@ export const MAHARAJA_PRODUCTS: MaharajaProduct[] = [
     tagline: "Ceremonial red silk for grand occasions.",
     description:
       "Vermilion silk steeped in auspicious tradition — a bridal and ceremonial favourite. The zari work is dense along the pallu, giving the drape a luminous edge against the deep red body.",
-    image: "/maharaja/vermilion.jpg?v=1",
-    hover: "/maharaja/vermilion-hover.jpg?v=1",
+    image: "/maharaja/vermilion.jpg?v=2",
+    hover: "/maharaja/vermilion.jpg?v=2",
     colorName: "Vermilion & Antique Gold",
     hexColor: "#9b1b1e",
     details: {
@@ -87,8 +87,8 @@ export const MAHARAJA_PRODUCTS: MaharajaProduct[] = [
     tagline: "Soft ivory silk with champagne zari.",
     description:
       "An ivory Mysore silk with a quiet sheen — elegant for day ceremonies and evening gatherings alike. Champagne-toned zari keeps the look refined without losing royal presence.",
-    image: "/maharaja/ivory.jpg?v=1",
-    hover: "/maharaja/ivory-hover.jpg?v=1",
+    image: "/maharaja/ivory.jpg?v=2",
+    hover: "/maharaja/ivory.jpg?v=2",
     colorName: "Mysore Ivory & Champagne",
     hexColor: "#e8dfd0",
     details: {
@@ -113,8 +113,8 @@ export const MAHARAJA_PRODUCTS: MaharajaProduct[] = [
     tagline: "Emerald silk inspired by palace gardens.",
     description:
       "Palace green silk with a deep jewel tone and gold zari that recalls Mysuru’s gardens at dusk. A distinctive colour for those who favour heritage with a bolder presence.",
-    image: "/maharaja/palace-green.jpg?v=1",
-    hover: "/maharaja/palace-green-hover.jpg?v=1",
+    image: "/maharaja/palace-green.jpg?v=2",
+    hover: "/maharaja/palace-green.jpg?v=2",
     colorName: "Palace Emerald & Gold",
     hexColor: "#1b4d3e",
     details: {
@@ -139,8 +139,8 @@ export const MAHARAJA_PRODUCTS: MaharajaProduct[] = [
     tagline: "The collection’s signature heirloom drape.",
     description:
       "The Maharani is the pinnacle of the collection — deep maroon silk, dense gold zari, and a pallu designed for lasting grandeur. Woven for those who collect, not merely wear.",
-    image: "/maharaja/maharani.jpg?v=1",
-    hover: "/maharaja/maharani-hover.jpg?v=1",
+    image: "/maharaja/maharani.jpg?v=2",
+    hover: "/maharaja/maharani.jpg?v=2",
     colorName: "Maharani Maroon & Gold",
     hexColor: "#5c1520",
     details: {

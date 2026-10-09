@@ -113,7 +113,7 @@ export const SITE_NAV: NavGroup[] = [
       {
         label: "Our Heritage",
         href: "/heritage",
-        image: "/generations.jpg",
+        image: "/generations-mallige.jpg",
         description: "A living lineage of weavers, patrons and silk that spans generations.",
         ctaLabel: "Explore heritage",
       },
@@ -155,7 +155,7 @@ export const SITE_NAV: NavGroup[] = [
       {
         label: "Stories",
         href: "/journal/stories",
-        image: "/generations.jpg",
+        image: "/generations-mallige.jpg",
         description: "Narratives of silk, family and the occasions that call for Mysore weave.",
         ctaLabel: "Read stories",
       },

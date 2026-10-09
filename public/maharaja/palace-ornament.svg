@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" fill="none" aria-hidden="true">
+  <g stroke="#B88A4A" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Mysore palace silhouette -->
+    <path d="M80 320h480" opacity="0.55"/>
+    <path d="M120 320V220l40-36 40 36v100" opacity="0.7"/>
+    <path d="M240 320V180l80-70 80 70v140" opacity="0.85"/>
+    <path d="M440 320V220l40-36 40 36v100" opacity="0.7"/>
+    <path d="M280 180h160" opacity="0.55"/>
+    <path d="M300 130v28M320 110v48M360 96v62M400 110v48M420 130v28" opacity="0.75"/>
+    <circle cx="360" cy="88" r="6" opacity="0.65"/>
+    <path d="M160 250h60M420 250h60M300 250h120" opacity="0.45"/>
+    <path d="M260 320c16-28 40-42 60-42s44 14 60 42" opacity="0.4"/>
+    <!-- Lotus left -->
+    <path d="M95 150c-10-18-28-28-42-30 16-4 30-14 42-28 12 14 26 24 42 28-14 2-32 12-42 30Z" opacity="0.45"/>
+    <path d="M95 118c-6-10-14-16-24-18 10-2 18-8 24-16 6 8 14 14 24 16-10 2-18 8-24 18Z" opacity="0.35"/>
+    <!-- Lotus right -->
+    <path d="M545 145c-10-18-28-28-42-30 16-4 30-14 42-28 12 14 26 24 42 28-14 2-32 12-42 30Z" opacity="0.4"/>
+    <path d="M545 113c-6-10-14-16-24-18 10-2 18-8 24-16 6 8 14 14 24 16-10 2-18 8-24 18Z" opacity="0.32"/>
+    <!-- Jasmine clusters -->
+    <circle cx="175" cy="95" r="3.2" opacity="0.35"/>
+    <circle cx="186" cy="90" r="2.6" opacity="0.3"/>
+    <circle cx="168" cy="86" r="2.4" opacity="0.28"/>
+    <circle cx="470" cy="100" r="3" opacity="0.32"/>
+    <circle cx="482" cy="94" r="2.5" opacity="0.28"/>
+    <circle cx="462" cy="90" r="2.3" opacity="0.26"/>
+  </g>
+</svg>

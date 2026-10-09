@@ -1845,38 +1845,37 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 /* HERITAGE */
 .heritage {
+  --heritage-ivory: #f5efe5;
+  --heritage-ink: #38251d;
+  --heritage-gold: #b58a4c;
+  --heritage-muted: #87766a;
+  --heritage-maroon: #650f25;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
   min-height: 0;
-  background: #0a0806;
-  color: var(--warm);
+  background: var(--heritage-ivory);
+  color: var(--heritage-ink);
   overflow: hidden;
   isolation: isolate;
 }
 .heritage__atmosphere {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(ellipse 55% 70% at 72% 45%, rgba(80, 48, 28, 0.35), transparent 62%),
-    radial-gradient(ellipse 40% 50% at 20% 80%, rgba(20, 12, 8, 0.5), transparent 55%),
-    linear-gradient(90deg, #050403 0%, #0c0907 48%, #080605 100%);
+  display: none;
 }
 .heritage__image {
   position: relative;
   z-index: 1;
   min-height: 420px;
   overflow: hidden;
+  background: var(--heritage-maroon);
 }
 .heritage__image .media-fill img {
   object-fit: cover;
-  object-position: center 20%;
-  transition: transform 1.6s var(--ease);
+  object-position: center 28%;
+  transition: transform 1.8s var(--ease), opacity 900ms var(--ease);
 }
 .heritage:hover .heritage__image .media-fill img {
-  transform: scale(1.03);
+  transform: scale(1.025);
 }
 .heritage__panel {
   position: relative;
@@ -1884,87 +1883,169 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: clamp(1.25rem, 2.5vw, 2rem);
   min-height: 0;
   overflow: hidden;
+  background: var(--heritage-ivory);
+  color: var(--heritage-ink);
+}
+.heritage__ornament-wrap {
+  position: absolute;
+  right: clamp(0.5rem, 2vw, 1.5rem);
+  top: 42%;
+  transform: translateY(-50%);
+  width: min(38%, 11rem);
+  pointer-events: none;
+  z-index: 0;
+  color: var(--heritage-gold);
+  opacity: 0.07;
+}
+.heritage__ornament {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .heritage__copy {
   position: relative;
   z-index: 3;
-  padding: clamp(2rem, 4vw, 3.25rem) var(--gutter) 1.25rem;
+  padding: clamp(2rem, 4vw, 3.25rem) var(--gutter) 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 34rem;
 }
+.heritage__eyebrow-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 1.25rem;
+  width: 100%;
+  max-width: 28rem;
+}
 .heritage__eyebrow {
-  margin: 0 0 1.15rem;
+  margin: 0;
+  flex: 0 0 auto;
+  font-family: var(--font-body);
   font-size: 0.68rem;
   font-weight: 500;
-  letter-spacing: 0.32em;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--heritage-gold);
+  white-space: nowrap;
+}
+.heritage__eyebrow-rule {
+  flex: 1 1 auto;
+  height: 1px;
+  min-width: 1.5rem;
+  background: rgba(181, 138, 76, 0.55);
+}
+.heritage__lotus {
+  flex: 0 0 auto;
+  width: 1.15rem;
+  height: 1.15rem;
+  color: var(--heritage-gold);
+  opacity: 0.85;
 }
 .heritage__title {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(2.35rem, 5.2vw, 3.85rem);
-  line-height: 1.08;
+  font-size: clamp(2.2rem, 4.8vw, 3.55rem);
+  line-height: 1.1;
   letter-spacing: -0.015em;
-  color: #f7f2e9;
+  color: var(--heritage-ink);
 }
 .heritage__lead {
-  margin: 1.1rem 0 1.5rem;
+  margin: 1.15rem 0 1.55rem;
   font-family: var(--font-display);
-  font-size: clamp(1.05rem, 1.8vw, 1.28rem);
-  line-height: 1.5;
-  color: rgba(247, 242, 233, 0.72);
-  max-width: 28rem;
+  font-size: clamp(1.05rem, 1.7vw, 1.22rem);
+  line-height: 1.55;
+  color: var(--heritage-muted);
+  max-width: 27rem;
 }
 .heritage__cta {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
   width: fit-content;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid rgba(183, 154, 104, 0.75);
-  font-size: 0.72rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(181, 138, 76, 0.7);
+  font-family: var(--font-body);
+  font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(247, 242, 233, 0.92);
+  color: var(--heritage-gold);
   transition: color 400ms var(--ease), border-color 400ms var(--ease), gap 400ms var(--ease);
 }
 .heritage__cta:hover {
-  color: var(--gold);
-  border-bottom-color: var(--gold);
+  color: var(--heritage-ink);
+  border-bottom-color: var(--heritage-ink);
   gap: 0.75rem;
 }
 .heritage__loom {
   position: relative;
   z-index: 2;
   width: calc(100% - 2 * var(--gutter));
-  max-width: 22rem;
+  max-width: 28rem;
   margin: 0 var(--gutter) clamp(1.5rem, 3vw, 2.25rem);
-  aspect-ratio: 16 / 10;
-  overflow: hidden;
-  opacity: 1;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
   pointer-events: none;
+}
+.heritage__loom-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3.5 / 1;
+  overflow: hidden;
+  background: #2a1c14;
 }
 .heritage__loom .media-fill img {
   object-fit: cover;
-  object-position: center 40%;
-  filter: saturate(0.95) contrast(1.04);
+  object-position: center 45%;
+  filter: saturate(0.96) contrast(1.03);
 }
-.heritage__loom::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(90deg, rgba(10, 8, 6, 0.35), transparent 35%),
-    linear-gradient(180deg, transparent 45%, rgba(10, 8, 6, 0.35));
-  pointer-events: none;
+.heritage__caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--heritage-gold);
+}
+.heritage__caption-rule {
+  flex: 1 1 auto;
+  max-width: 3.5rem;
+  height: 1px;
+  background: rgba(181, 138, 76, 0.5);
+}
+
+@keyframes heritage-fade {
+  from {
+    opacity: 0;
+    transform: translateY(0.6rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .heritage__copy {
+    animation: heritage-fade 900ms var(--ease) both;
+  }
+  .heritage__loom {
+    animation: heritage-fade 1100ms var(--ease) 120ms both;
+  }
+  .heritage__image .media-fill img {
+    animation: heritage-fade 1200ms var(--ease) both;
+  }
 }
 
 /* ——— Heritage exhibition (fullscreen cinematic) ——— */
@@ -2544,9 +2625,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .maharaja__item { flex: 0 0 calc((100% - 4.6rem) / 5); min-width: 0; }
 
   .heritage {
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-    height: 540px;
-    min-height: 540px;
+    grid-template-columns: minmax(0, 52fr) minmax(0, 48fr);
+    min-height: clamp(520px, 72vh, 640px);
+    height: auto;
     align-items: stretch;
   }
   .heritage__image,
@@ -2554,21 +2635,43 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     min-height: 100%;
   }
   .heritage__copy {
-    padding: 2.25rem clamp(1.5rem, 3vw, 3rem) 1rem clamp(2.5rem, 4.5vw, 4.5rem);
-    max-width: 32rem;
+    padding: clamp(2.25rem, 4vw, 3.5rem) clamp(1.75rem, 3.5vw, 3.25rem) 0.5rem
+      clamp(2.25rem, 4.5vw, 4rem);
+    max-width: 34rem;
   }
   .heritage__loom {
-    width: calc(100% - clamp(2.5rem, 4.5vw, 4.5rem) - clamp(1.5rem, 3vw, 3rem));
-    max-width: 24rem;
-    margin-left: clamp(2.5rem, 4.5vw, 4.5rem);
-    margin-right: clamp(1.5rem, 3vw, 3rem);
-    margin-bottom: 1.75rem;
-    aspect-ratio: 16 / 10;
+    width: calc(100% - clamp(2.25rem, 4.5vw, 4rem) - clamp(1.75rem, 3.5vw, 3.25rem));
+    max-width: 30rem;
+    margin-left: clamp(2.25rem, 4.5vw, 4rem);
+    margin-right: clamp(1.75rem, 3.5vw, 3.25rem);
+    margin-bottom: clamp(1.5rem, 2.5vw, 2.25rem);
   }
 
   .footer-ed__top { grid-template-columns: 1.1fr 2fr; }
   .footer-ed__cols { grid-template-columns: repeat(4, 1fr); }
   }
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .heritage {
+    min-height: 500px;
+  }
+  .heritage__copy {
+    padding: 1.85rem 1.5rem 0.35rem 1.85rem;
+  }
+  .heritage__title {
+    font-size: clamp(1.9rem, 3.4vw, 2.65rem);
+  }
+  .heritage__lead {
+    font-size: 1.05rem;
+    margin: 0.9rem 0 1.25rem;
+  }
+  .heritage__loom {
+    width: calc(100% - 3.35rem);
+    margin-left: 1.85rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.35rem;
+  }
+}
 
 @media (max-width: 900px) {
   .nav__mega--group,
@@ -2636,11 +2739,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   }
   .heritage__image {
     min-height: 0;
-    aspect-ratio: 4 / 3;
-    max-height: 16rem;
+    aspect-ratio: 5 / 4;
+    max-height: 18rem;
   }
   .heritage__image .media-fill img {
-    object-position: center 18%;
+    object-position: center 30%;
   }
   .heritage__panel {
     display: flex;
@@ -2649,23 +2752,32 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     min-height: 0;
     overflow: hidden;
   }
+  .heritage__ornament-wrap {
+    width: min(42%, 8.5rem);
+    top: 38%;
+    opacity: 0.055;
+  }
   .heritage__copy {
-    padding: 1.5rem var(--gutter) 1.25rem;
+    padding: 1.75rem var(--gutter) 0.35rem;
+    max-width: none;
+  }
+  .heritage__eyebrow-row {
+    margin-bottom: 0.9rem;
     max-width: none;
   }
   .heritage__eyebrow {
-    margin-bottom: 0.55rem;
     font-size: 0.58rem;
     letter-spacing: 0.22em;
   }
   .heritage__title {
-    font-size: clamp(1.55rem, 6.5vw, 2rem);
+    font-size: clamp(1.7rem, 7vw, 2.25rem);
     line-height: 1.12;
   }
   .heritage__lead {
-    margin: 0.75rem 0 1.1rem;
-    font-size: 0.95rem;
-    line-height: 1.45;
+    margin: 0.85rem 0 1.2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: none;
   }
   .heritage__cta {
     font-size: 0.62rem;
@@ -2677,10 +2789,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     bottom: auto;
     width: calc(100% - 2 * var(--gutter));
     max-width: none;
-    margin: 0 var(--gutter) 1.5rem;
-    aspect-ratio: 16 / 9;
-    opacity: 1;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    margin: 0.35rem var(--gutter) 1.75rem;
+  }
+  .heritage__loom-frame {
+    aspect-ratio: 3.2 / 1;
+  }
+  .heritage__caption {
+    font-size: 0.52rem;
+    letter-spacing: 0.2em;
   }
 }
 
